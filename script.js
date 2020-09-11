@@ -50,7 +50,8 @@ window.addEventListener("load", function () {
 });
 
 // stagger steps
-gsap.to('.step',{
-    scrollTrigger:".step",
-    y: 100
-)};
+
+gsap.to(".step", {
+  scrollTrigger: ".step", // start the animation when ".box" enters the viewport (once)
+  x: 500,
+});
