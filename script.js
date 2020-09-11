@@ -53,4 +53,4 @@ window.addEventListener("load", function () {
 gsap.from('.step',{
     scrollTrigger:".step",
     y: 100
-}
+)};
