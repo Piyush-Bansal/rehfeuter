@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
 });
 
 // stagger steps
-gsap.from('.step',{
+gsap.to('.step',{
     scrollTrigger:".step",
     y: 100
 )};
