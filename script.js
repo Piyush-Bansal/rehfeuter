@@ -13,10 +13,6 @@
  </script>
 
 //staggered text
-<script src ="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-<script src ="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-<script src ="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
-
 <script>
 window.addEventListener("load", function () {
   let revealText = document.querySelectorAll(".reveal-text");
