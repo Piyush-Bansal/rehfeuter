@@ -3,7 +3,7 @@ var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
 if (!isMobile) {
   luxy.init({
     wrapper: "#luxy",
-    wrapperSpeed: 0.09,
+    wrapperSpeed: 0.45,
   });
 }
 
@@ -48,3 +48,9 @@ window.addEventListener("load", function () {
     });
   });
 });
+
+// stagger steps
+gsap.from('.step',{
+    scrollTrigger:".step",
+    y: 100
+}
