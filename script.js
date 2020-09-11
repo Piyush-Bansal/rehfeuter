@@ -1,17 +1,13 @@
 // smooth scroll
-<script charset="utf-8">  
- var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
- if (!isMobile) {
-      luxy.init({
-        wrapper: '#luxy',
-        wrapperSpeed: 0.045,
-       
-    });
- }
- </script>
+var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+if (!isMobile) {
+  luxy.init({
+    wrapper: "#luxy",
+    wrapperSpeed: 0.045,
+  });
+}
 
 //staggered text
-<script>
 window.addEventListener("load", function () {
   let revealText = document.querySelectorAll(".reveal-text");
   let results = Splitting({ target: revealText, by: "lines" });
@@ -40,16 +36,15 @@ window.addEventListener("load", function () {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: element,
-        start: "top 50%"
-      }
+        start: "top 50%",
+      },
     });
     tl.set(lines, { autoAlpha: 1 });
     tl.from(lines, 1, {
       yPercent: 100,
       ease: Power3.out,
       stagger: 0.25,
-      delay: 0.2
+      delay: 0.2,
     });
   });
 });
-</script>
