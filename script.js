@@ -48,3 +48,25 @@ window.addEventListener("load", function () {
     });
   });
 });
+
+gsap.from(".step", {
+  scrollTrigger: ".step",
+  start: "bottom center",
+  duration: 1,
+  ease: "power1.in",
+  y: 40,
+  opacity: 0,
+  stagger: 0.25,
+  delay: 0.15,
+});
+
+gsap.from(".price", {
+  scrollTrigger: ".price",
+  start: "bottom center",
+  duration: 1,
+  ease: "power1.in",
+  y: 30,
+  opacity: 0,
+  stagger: 0.35,
+  delay: 0.25,
+});
