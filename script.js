@@ -1,3 +1,4 @@
+//smooth scroll
 var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
 if (!isMobile) {
   luxy.init({
@@ -6,6 +7,17 @@ if (!isMobile) {
   });
 }
 
+//freeze scroll
+window.addEventListener("load", (event) => {
+  document.querySelector("body").style.overflow = "hidden";
+});
+
+setTimeout(unfreez, 4300);
+function unfreez() {
+  document.querySelector("body").style.overflow = "auto";
+}
+
+//stagger text
 window.addEventListener("load", function () {
   let revealText = document.querySelectorAll(".reveal-text");
   let results = Splitting({ target: revealText, by: "lines" });
@@ -85,12 +97,3 @@ window.addEventListener("load", function () {
     });
   });
 });
-
-window.addEventListener("load", (event) => {
-  document.querySelector("body").style.overflow = "hidden";
-});
-
-setTimeout(unfreez, 4300);
-function unfreez() {
-  document.querySelector("body").style.overflow = "auto";
-}
