@@ -49,6 +49,7 @@ window.addEventListener("load", function () {
   });
 });
 
+//Homepage animations
 gsap.from(".step", {
   scrollTrigger: ".step",
   start: "bottom 80%",
