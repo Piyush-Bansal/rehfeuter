@@ -81,7 +81,7 @@ window.addEventListener("load", function () {
       yPercent: 100,
       ease: Power3.out,
       stagger: 0.25,
-      delay: 3,
+      delay: 3.5,
     });
   });
 });
