@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: element,
-        start: "top 50%",
+        start: "bottom 80%",
       },
     });
     tl.set(lines, { autoAlpha: 1 });
