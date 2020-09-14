@@ -5,7 +5,7 @@ if (!isMobile) {
     wrapper: "#luxy",
     wrapperSpeed: 0.45,
   });
-};
+}
 
 //staggered text
 window.addEventListener("load", function () {
@@ -49,25 +49,16 @@ window.addEventListener("load", function () {
   });
 });
 
-//Homepage animations
+// stagger steps
+//<script>
 gsap.from(".step", {
   scrollTrigger: ".step",
-  start: "bottom 80%",
-  duration: 1,
-  ease: "power4.out",
-  y: 40,
+  start: "bottom center",
+  duration: 0.8,
+  ease: "power1.in",
+  y: 50,
   opacity: 0,
   stagger: 0.25,
-  delay: 0.15,
+  delay: 0.2,
 });
-
-gsap.from(".price", {
-  scrollTrigger: ".price",
-  start: "bottom 80%",
-  duration: 1,
-  ease: "power4.out",
-  y: 30,
-  opacity: 0,
-  stagger: 0.35,
-  delay: 0.25,
-});
+//</script>
