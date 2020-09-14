@@ -51,9 +51,9 @@ window.addEventListener("load", function () {
 
 gsap.from(".step", {
   scrollTrigger: ".step",
-  start: "bottom center",
+  start: "top 20%",
   duration: 1,
-  ease: "power1.in",
+  ease: "power4.out",
   y: 40,
   opacity: 0,
   stagger: 0.25,
@@ -62,9 +62,9 @@ gsap.from(".step", {
 
 gsap.from(".price", {
   scrollTrigger: ".price",
-  start: "bottom center",
+  start: "top 20%",
   duration: 1,
-  ease: "power1.in",
+  ease: "power4.out",
   y: 30,
   opacity: 0,
   stagger: 0.35,
