@@ -5,7 +5,7 @@ if (!isMobile) {
     wrapper: "#luxy",
     wrapperSpeed: 0.45,
   });
-}
+};
 
 //staggered text
 window.addEventListener("load", function () {
