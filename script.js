@@ -17,6 +17,16 @@ function unfreez() {
   document.querySelector("body").style.overflow = "auto";
 }
 
+// loading animation
+$("button-container").click(function (e) {
+  e.preventDefault();
+  var goTo = this.getAttribute("href");
+
+  setTimeout(function () {
+    window.location = goTo;
+  }, 1000);
+});
+
 //stagger text
 window.addEventListener("load", function () {
   let revealText = document.querySelectorAll(".reveal-text");
