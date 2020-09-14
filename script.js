@@ -81,7 +81,7 @@ window.addEventListener("load", function () {
       yPercent: 100,
       ease: Power3.out,
       stagger: 0.25,
-      delay: 4.3,
+      delay: 4.5,
     });
   });
 });
@@ -91,7 +91,6 @@ window.addEventListener("load", (event) => {
 });
 
 setTimeout(unfreez, 4300);
-
 function unfreez() {
   document.querySelector("body").style.overflow = "auto";
 }
